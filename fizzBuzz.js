@@ -18,4 +18,10 @@ var fizzBuzz = function(n) {
 };
 fizzBuzz()
 
-//okay alternative?
+//okay alternative????
+
+var fizzBuzz = function(n) {
+for (let i = 1; i < n+1;) console.log((i++ % 3 ? '' : 'fizz') + (i % 5 ? '' : 'Buzz') || i)
+
+};
+//fizzBuzz()
