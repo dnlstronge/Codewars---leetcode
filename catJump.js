@@ -16,17 +16,20 @@ Start 1, finish 5, then answer is 2 (1 => 4 => 5 or 1 => 2 => 5)
 
 
 function solution(s, f) {
-const shelves = f - s + 1  // total shelves!
+  
+  
+let shelves = f - s + 1 
 
-// logic dividing by 4 will always leave a remainder less than four and therefore = to 1 jump
-
-const j = Math.floor(shelves / 4) 
-const j2 = shelves * 4
-const answer = j === j2 ? j : j + 1 
+if (shelves <= 3) {
+  return 1
+} else {
+let j = Math.floor(shelves / 4) 
+let j2 = shelves * 4
+let answer = j === j2 ? j : j + 1 
 return answer
+  }
 
 }
 
 
-
-// think this should work but can it be refactored
+// had to add another conditional to catch shelf numbers less than 3 etc
