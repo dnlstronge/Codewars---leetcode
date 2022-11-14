@@ -14,22 +14,18 @@ Start 1, finish 5, then answer is 2 (1 => 4 => 5 or 1 => 2 => 5)
 
 */
 
+function solution(s, f) 
+{
+  let steps = f-s
 
-function solution(s, f) {
-  
-  
-let shelves = f - s + 1 
+  let longjump = Math.floor(stepsToClimb/3)
 
-if (shelves <= 3) {
-  return 1
-} else {
-let j = Math.floor(shelves / 4) 
-let j2 = shelves * 4
-let answer = j === j2 ? j : j + 1 
-return answer
-  }
+  let jumps = steps % 3
 
+  return longjump + jumps
 }
 
 
-// had to add another conditional to catch shelf numbers less than 3 etc
+
+// still didn't work. 
+// tried alternate method
