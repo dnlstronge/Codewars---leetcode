@@ -6,3 +6,14 @@ For example, if we run 9119 through the function, 811181 will come out, because 
 Note: The function accepts an integer and returns an integer
 */
 
+function squareDigits(n) {
+  let str = n.toString();
+  let answer = '';
+for (let i in str) answer += str[i]*str[i]
+
+  console.log(answer)
+}
+
+squareDigits(345654)
+
+// I think this works
