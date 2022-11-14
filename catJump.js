@@ -23,10 +23,10 @@ const shelves = f - s + 1  // total shelves!
 const j = Math.floor(shelves / 4) 
 const j2 = shelves * 4
 const answer = j === j2 ? j : j + 1 
-console.log(answer)
+return answer
 
 }
-solution(5, 23)
+
 
 
 // think this should work but can it be refactored
