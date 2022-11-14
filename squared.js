@@ -11,9 +11,8 @@ function squareDigits(n) {
   let answer = '';
 for (let i in str) answer += str[i]*str[i]
 
-  console.log(answer)
+return parseInt(answer)
 }
 
-squareDigits(345654)
-
 // I think this works
+// need to parseint to return an integer again
