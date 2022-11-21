@@ -13,7 +13,7 @@ unscrambleEggs("Beggegeggineggneggeregg"); => "Beginner"
 unscrambleEggs()
 
 
-//first thoughts are replace 'egg' with nothing
+/*first thoughts are replace 'egg' with nothing
 
 function unscrambleEggs(e) {
 let eggs = e
@@ -21,4 +21,16 @@ return eggs.replace('egg', '')
 }
 console.log(unscrambleEggs('beggeginner'))
 
-// returns beginner, butwhat if there are multiple 'egg'
+returns beginner, butwhat if there are multiple 'egg'
+// use global?
+*/
+
+function unscrambleEggs(str) {
+return str.replace(/egg/g , '')
+}
+console.log(unscrambleEggs('eggeegyeggyegegggegegeggegegggegegyyyomommma'))
+
+/* 
+Output: eegyyeggegegeggegegyyyomommma */
+
+// looks to be working
