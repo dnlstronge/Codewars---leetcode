@@ -1,24 +1,23 @@
 // need a function that repeats. for loop?
-function ball(height, bounce, w) {
-  let num = 0
+function bouncingBall(height, bounce, w) {
+  let num = -1
 if( bounce >0 && bounce< 1) {
 
  
 for (let i = height; i >w; i = i*bounce)  {
  num +=2
 }
-console.log(num)
+return num
 
 } else {
-num -= 1
-console.log(num)
-}
+
+return num
 }
 // having difficulty getting a for loop to work because i am an idiot
 // note I got the loop working
 // add conditional to catch >0 & <1
 
-
+//SOLVED
 
 
 /* 
