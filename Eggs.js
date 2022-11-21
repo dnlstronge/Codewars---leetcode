@@ -11,3 +11,14 @@ unscrambleEggs("Beggegeggineggneggeregg"); => "Beginner"
 */
 
 unscrambleEggs()
+
+
+//first thoughts are replace 'egg' with nothing
+
+function unscrambleEggs(e) {
+let eggs = e
+return eggs.replace('egg', '')
+}
+console.log(unscrambleEggs('beggeginner'))
+
+// returns beginner, butwhat if there are multiple 'egg'
