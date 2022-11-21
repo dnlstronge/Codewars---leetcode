@@ -1,16 +1,25 @@
 // need a function that repeats. for loop?
 
-function ball(bounce, h) {
-  let window = 1.5
+function ball(height, bounce) {
   let num = 0
-  if (Math.floor(h / bounce) >= 1.5) 
-  { return num +2}
 
+
+  if ( height * bounce <= 1.5 ) 
+  { num -= 1
+  console.log(num)}
+
+  else { 
+    for ( let i = height ; i = 1.5 ; i * bounce) 
+   {num += 2}
+
+  }
+  return num
+  console.log(num)
 }
 
 
 
-
+// having difficulty getting a for loop to work because i am an idiot
 
 
 
