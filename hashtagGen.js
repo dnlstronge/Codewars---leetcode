@@ -14,11 +14,8 @@ If the input or the result is an empty string it must return false.
 function generateHashtag(str){
     let arg = str.split(' ').map(l => l.charAt(0).toUpperCase() + l.slice(1))
     let answer = `#${arg.toString().replace(/,/g, '')}`
-   return answer.length > 0 && answer.length <= 140 ? answer : false
-    
-   //console.log(answer)
-   //console.log(chars)
-   // console.log(solve)
+    if (answer === '#' || answer.length > 140 ) { return false } 
+    else { return answer }
 
 }
   //let answer = array.toString().replace(/,/g, '')
