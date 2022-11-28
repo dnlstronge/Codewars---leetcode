@@ -11,16 +11,18 @@ If the input or the result is an empty string it must return false.
 
 */
                               
-                              
 function iterate(string){
-  let array = string.split(' ')
-  let string2 = array.toString().replace(/,/g, '')
-
-  console.log(array)
-  console.log(string2)
+ let answer = string
+    .split(' ')
+    .map(l => l.charAt(0).toUpperCase() + l.slice(1))
+console.log(answer)
 }
 
+
+
 iterate('fancy going to the shop')
+  //let answer = array.toString().replace(/,/g, '')
 
 // sofar I can return the string, but need to capitalise each char at 0?
-// think maybe return a mapped array, change char at instead of for loop. 
+// think maybe return a mapped array, change char at instead of for loop.
+// now I hav capitlised the letters I need to join? then conc '#'
