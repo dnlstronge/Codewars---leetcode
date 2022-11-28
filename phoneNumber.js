@@ -14,3 +14,5 @@ function createPhoneNumber(number) {
 createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
 
 // used concatenation of string to return required format
+// I first convert the array of numbers to a string and then remove the commas using replace set to global
+// i store this under a new var which I then use the slice method along with template literals to form the number format requested
