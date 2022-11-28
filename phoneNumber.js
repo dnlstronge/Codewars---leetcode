@@ -3,3 +3,12 @@
 Example createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890" */
 
 // first  thoughts are to push or split the indices into variables and combine
+
+function createPhoneNumber(number) {
+ let tostring = number.toString().replace(/,/g, '')
+ console.log(tostring)
+}
+
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+
+// this returns all the numbers as a string
