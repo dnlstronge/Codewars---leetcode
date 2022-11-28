@@ -6,9 +6,11 @@ Example createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 4
 
 function createPhoneNumber(number) {
  let tostring = number.toString().replace(/,/g, '')
- console.log(tostring)
+
+ let callme = `(${tostring.slice(0,3)}) ${tostring.slice(3, 6)}-${tostring.slice(6, 10)}` 
+ return callme
 }
 
 createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
 
-// this returns all the numbers as a string
+// used concatenation of string to return required format
