@@ -23,3 +23,4 @@ function iterate(string){
 iterate('fancy going to the shop')
 
 // sofar I can return the string, but need to capitalise each char at 0?
+// think maybe return a mapped array, change char at instead of for loop. 
