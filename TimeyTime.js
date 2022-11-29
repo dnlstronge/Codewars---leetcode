@@ -9,18 +9,20 @@ The maximum time never exceeds 359999 (99:59:59)
 
 function humanReadable (seconds) {
 
-let hoursfloor = Math.floor(seconds/3600)
+let floorhours = Math.floor(seconds/3600)
 let hours = '00'
-if (hoursfloor < 10 ) { hours = `0${hoursfloor}`
-  
-} if(hoursfloor > 9 && hoursfloor < 100 ) {
-  hours = hoursfloor
+if (floorhours > 1 && floorhours < 10 ) { hours = `0${floorhours}`} 
+if (floorhours > 9 ) {hours = floorhours}
+console.log(floormins)
+
+
+let floormins = seconds % 3600 / 60
+let mins = '00'
+
 
 }
 
-let mins = '0'
-let secs = '0'
-
+  
 
 /*
 Thoughts: 
