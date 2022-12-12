@@ -1,26 +1,29 @@
-/* Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way.
-
-The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds.
-
-It is much easier to understand with an example:
-
-* For seconds = 62, your function should return 
-    "1 minute and 2 seconds"
-* For seconds = 3662, your function should return
-    "1 hour, 1 minute and 2 seconds" */
-
 function formatDuration (seconds) {
+ 
+ const yS = 36536000
+ const dS = 86400
+ const hrS =  3600
+ const minS = 60
 
-  const years = 31536000
-  const day = 86400
-  const hour = 3600
+  let years = Math.floor(seconds / yS)
+  console.log(years)
+  
+
+  let days = Math.floor( seconds % yS / dS)
+  console.log(days)
+
+  let hours = Math.floor( seconds % yS % dS / hrS)
+  console.log(hours)
+
+  let minutes = Math.floor( seconds % yS % dS % hrS / minS)
+  console.log(minutes)
+
+  let secs = Math.floor ( seconds % yS % dS % hrS % minS)
+ 
+ //const solution = {logic}
+  //const min = 60
 // years
 
 }
 
-
-// find years/day/hour/min/ using remainder of? 
-// break down and concatenate with a condition if the value is  > 0
-
-
-// so I want to find remainder, for each segment there will be a floored value or zero, if zero it will be ignored. if 1 change grammer if >1 etc
+formatDuration(99184567)
