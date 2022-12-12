@@ -20,4 +20,7 @@ function formatDuration (seconds) {
 
 
 // find years/day/hour/min/ using remainder of? 
-// break down and concatenate with a condition if the value is  = 1
+// break down and concatenate with a condition if the value is  > 0
+
+
+// so I want to find remainder, for each segment there will be a floored value or zero, if zero it will be ignored. if 1 change grammer if >1 etc
