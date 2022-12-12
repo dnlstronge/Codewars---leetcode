@@ -1,8 +1,4 @@
 
-//// I think (!) I have go it... need to test
-
-
-
 function formatDuration (seconds) {
  
  const yS = 36536000
@@ -48,11 +44,10 @@ let array2 = []
 
 let solution = ''
 switch (array1.length) {
-  case 0:
-  console.log(array1[0])
+
 
   case 1: 
-  solution = `${array[0]}`
+  solution = `${array1[0]}`
   
   case 2:
   solution = `${array1[0]} and ${array1[1]}`
@@ -60,10 +55,10 @@ switch (array1.length) {
  
   case 3: 
    solution = `${array1[0]}, ${array1[1]} and ${array1[2]}`
-   break;
+  break;
  
   case 4: 
-  solution = `${array1[0]},${array1[1]}, ${array1[2]} and ${array1[3]}`
+  solution = `${array1[0]}, ${array1[1]}, ${array1[2]} and ${array1[3]}`
   break;
   
   case 5: 
@@ -73,10 +68,12 @@ switch (array1.length) {
 default: 
 console.log('error')
 }
+
 console.log(solution)
+return solution
 
 
 
 }
 
-formatDuration(3667)
+formatDuration(1443667)
