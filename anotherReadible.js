@@ -9,3 +9,15 @@ It is much easier to understand with an example:
 * For seconds = 3662, your function should return
     "1 hour, 1 minute and 2 seconds" */
 
+function formatDuration (seconds) {
+
+  const years = 31536000
+  const day = 86400
+  const hour = 3600
+// years
+
+}
+
+
+// find years/day/hour/min/ using remainder of? 
+// break down and concatenate with a condition if the value is  = 1
