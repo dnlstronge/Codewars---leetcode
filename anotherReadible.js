@@ -5,28 +5,32 @@ function formatDuration (seconds) {
  const hrS =  3600
  const minS = 60
 
-  let years = Math.floor(seconds / yS)
+// years
+
+  let years = Math.floor(seconds / yS) 
   console.log(years)
-  
 
   let days = Math.floor( seconds % yS / dS)
   console.log(days)
 
   let hours = Math.floor( seconds % yS % dS / hrS)
   console.log(hours)
-
+  
   let minutes = Math.floor( seconds % yS % dS % hrS / minS)
   console.log(minutes)
 
   let secs = Math.floor ( seconds % yS % dS % hrS % minS)
- 
- //const solution = {logic}
-  //const min = 60
-// years
+  console.log(secs)
+
+let array1 = []
+let array2 = []
+
+if (years > 1 ) { array1.push(`${years} years`)}
+
+
 
 }
 
 
-// sofar I have the first stage of finding values - next the challenge is outputing these with the correct grammer logic
-
-formatDuration(99184567)
+// maybe user arrays? to determine if an array has a certain length it can be separated with the appropriate punctuation,
+// have condition decide what gets pushed 'plural; or 'singular
