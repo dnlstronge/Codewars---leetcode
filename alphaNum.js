@@ -6,8 +6,11 @@ At least one character ("" is not valid)
 Allowed characters are uppercase / lowercase latin letters and digits from 0 to 9
 No whitespaces / underscore */
 
+const alphanumeric = (string) => {
+ 
+    const regex = /^[a-z0-9]+$/i
+ 
+    return regex.test(string)
 
- const alphanumeric(string) => { const regex = /^[a-z0-9]+$/i
-console.log(regex.test(string))
-return regex.test(string)
 }
+alphanumeric('trdthis99')
