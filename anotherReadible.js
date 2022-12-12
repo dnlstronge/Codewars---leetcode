@@ -1,6 +1,6 @@
 function formatDuration (seconds) {
  
- const yS = 36536000
+ const yS = 31536000
  const dS = 86400
  const hrS =  3600
  const minS = 60
@@ -10,28 +10,20 @@ function formatDuration (seconds) {
   let years = Math.floor(seconds / yS) 
   //console.log(years)
 
- // days
-  
   let days = Math.floor( seconds % yS / dS)
   //console.log(days)
 
-// hours
-  
   let hours = Math.floor( seconds % yS % dS / hrS)
   //console.log(hours)
   
-// minutes
-  
   let minutes = Math.floor( seconds % yS % dS % hrS / minS)
   //console.log(minutes)
-  
-  // seconds
 
   let secs = Math.floor ( seconds % yS % dS % hrS % minS)
   //console.log(secs)
 
 let array1 = []
-let array2 = []
+
 
   if (years === 1 ) { array1.push(`${years} year`)}
   if (years > 1 ) { array1.push(`${years} years`)}
@@ -51,12 +43,14 @@ let array2 = []
 
 let solution = ''
 switch (array1.length) {
-
+  /*case 1 :
+  if(array1[0] === 0) {solution = 'now'}
+  break; */
 
   case 1: 
   solution = `${array1[0]}`
   break;
-  
+
   case 2:
   solution = `${array1[0]} and ${array1[1]}`
   break;
@@ -74,13 +68,14 @@ switch (array1.length) {
   break;
 
 default: 
-console.log('error')
+return 'now'
 }
 
-console.log(solution)
-return solution
-
-
-
+  console.log(solution)
+  return solution
 }
 
+
+
+
+formatDuration(132030240)
