@@ -26,4 +26,7 @@ function formatDuration (seconds) {
 
 }
 
+
+// sofar I have the first stage of finding values - next the challenge is outputing these with the correct grammer logic
+
 formatDuration(99184567)
