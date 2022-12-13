@@ -1,6 +1,8 @@
 // okay misread instruction needed sum of all array elements minus 
 
-// this works but only for lower numbers
+// this works but only for lower numbers in other words it needs to be optimised better.....
+
+a x b = n - (a + b)
 
 const removeNb = (n) => {
 
