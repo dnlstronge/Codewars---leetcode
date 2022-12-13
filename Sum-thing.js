@@ -1,20 +1,33 @@
+// update: after an hour++ I think i may have it!
+
 const findAB = (n) => {
 
-let array1=[1, 2, 3, 4];
+  let arr1=[];
 
-let array2=[1, 2, 3, 4];
-
-console.log(array1.flatMap(d => array2.map(v => d * v)))
+  let arr2=[];
+  let multied = []
+  for (let i = 1; i <= n; i++) {
+   arr1.push(i)
+   arr2.push(i)
+    }
+let solveme = []
+multied.push(arr1.flatMap(x => arr2.map(y => { 
+  if ( x * y === n - (x + y ))
   
-   }
+ { solveme.push(x, y) }
+ 
+ })))
+
+console.log(solveme)
+
+
+
+  }
     
 
-
-
-
-
-
 findAB(50)
+
+
 
 /* A friend of mine takes the sequence of all numbers from 1 to n (where n > 0).
 Within that sequence, he chooses two numbers, a and b.
