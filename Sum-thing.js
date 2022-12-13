@@ -1,32 +1,35 @@
-// update: after an hour++ I think i may have it!
+// okay misread instruction needed sum of all array elements minus 
 
-const findAB = (n) => {
+// this works but only for lower numbers
 
-  let arr1=[];
+const removeNb = (n) => {
 
-  let arr2=[];
-  let multied = []
-  for (let i = 1; i <= n; i++) {
+let arr1=[];
+
+let arr2=[];
+let multied = []
+for (var i = 1; i <= n; i++) {
    arr1.push(i)
    arr2.push(i)
-    }
+}
+
+let total = 0
+arr1.map(t => total += t)
+
 let solveme = []
 multied.push(arr1.flatMap(x => arr2.map(y => { 
-  if ( x * y === n - (x + y ))
+  if ( x * y ===  total - (x + y))
   
- { solveme.push(x, y) }
+ { solveme.push([x, y]) }
  
  })))
 
 console.log(solveme)
+return solveme
 
 
 
-  }
-    
-
-findAB(50)
-
+   }
 
 
 /* A friend of mine takes the sequence of all numbers from 1 to n (where n > 0).
