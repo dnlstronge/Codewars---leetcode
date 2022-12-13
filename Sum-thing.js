@@ -1,5 +1,7 @@
 // solve the algebra - solve the problem!!
 
+// i know this is some algebra thing.....
+
 const findAB = (n) => {
 
 
