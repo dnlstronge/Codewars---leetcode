@@ -1,37 +1,22 @@
-// okay misread instruction needed sum of all array elements minus 
+// solve the algebra - solve the problem!!
 
-// this works but only for lower numbers in other words it needs to be optimised better.....
+const findAB = (n) => {
 
-a x b = n - (a + b)
 
-const removeNb = (n) => {
+  let numbers = 0
+  for (let a = 0; a <= n; a++) {
+    numbers += a
 
-let arr1=[];
+  let b = numbers / a
+  let answer = ''
+  }
+  
 
-let arr2=[];
-let multied = []
-for (var i = 1; i <= n; i++) {
-   arr1.push(i)
-   arr2.push(i)
 }
 
-let total = 0
-arr1.map(t => total += t)
-
-let solveme = []
-multied.push(arr1.flatMap(x => arr2.map(y => { 
-  if ( x * y ===  total - (x + y))
-  
- { solveme.push([x, y]) }
- 
- })))
-
-console.log(solveme)
-return solveme
+findAB(35)
 
 
-
-   }
 
 
 /* A friend of mine takes the sequence of all numbers from 1 to n (where n > 0).
