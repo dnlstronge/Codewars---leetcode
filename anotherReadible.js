@@ -9,34 +9,48 @@ function formatDuration (seconds) {
 
   let years = Math.floor(seconds / yS) 
   //console.log(years)
-
+  
+// days
   let days = Math.floor( seconds % yS / dS)
   //console.log(days)
-
+  
+// hours
   let hours = Math.floor( seconds % yS % dS / hrS)
   //console.log(hours)
   
+// minutes  
   let minutes = Math.floor( seconds % yS % dS % hrS / minS)
   //console.log(minutes)
 
+// seconds
   let secs = Math.floor ( seconds % yS % dS % hrS % minS)
   //console.log(secs)
 
 let array1 = []
 
+// years
+
 
   if (years === 1 ) { array1.push(`${years} year`)}
   if (years > 1 ) { array1.push(`${years} years`)}
-
+ 
+// days 
+ 
   if (days === 1 ) { array1.push(`${days} day`)}
   if (days > 1 ) { array1.push(`${days} days`)}
 
+ // hours
+ 
   if ( hours === 1 ) { array1.push(`${hours} hour`)}
   if (hours > 1 ) { array1.push(`${hours} hours`)}
 
+ // minutes
+ 
   if (minutes === 1 ) { array1.push(`${minutes} minute`)}
   if (minutes > 1 ) { array1.push(`${minutes} minutes`)}
 
+ // seconds
+ 
   if (secs === 1 ) { array1.push(`${secs} second`)}
   if (secs > 1 ) { array1.push(`${secs} seconds`)}
 
