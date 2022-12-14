@@ -1,23 +1,31 @@
-// solve the algebra - solve the problem!!
+/// I didn't like this challenge, as its really just an algebra problem which wasn't very fun and required limited code. 
 
-// i know this is some algebra thing.....
-
-const findAB = (n) => {
+// disappointed, I actually preferred by original brute force solution.
 
 
-  let numbers = 0
-  for (let a = 0; a <= n; a++) {
-    numbers += a
 
-  let b = numbers / a
-  let answer = ''
-  }
+function removeNb (n) {
+  // from the instruction:
+  // a * b = S(n) - a - b
   
-
+  // and the sum of all first n natural numbers is
+  // S(n) = n * (n + 1) / 2
+  
+  // so we can refrase the first formula like this:
+  // a * b = n * (n + 1) / 2 - a - b
+  // a * b + b = n * (n + 1) / 2 - a
+  // b * (a + 1) = n * (n + 1) / 2 - a
+  // b = (n * (n + 1) / 2 - a) / (a + 1)
+  
+  // but a and b are natural and up to n
+  
+  var results = [];
+  for (var a = 1; a <= n; a++) {
+    var b = (n * (n + 1) / 2 - a) / (a + 1);
+    if (b % 1 === 0 && b <= n) results.push([a, b]);
+  }
+  return results;
 }
-
-findAB(35)
-
 
 
 
