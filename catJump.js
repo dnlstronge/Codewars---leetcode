@@ -27,5 +27,4 @@ function solution(s, f)
 
 
 
-// still didn't work. 
 // tried alternate method
