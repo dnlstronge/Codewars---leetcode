@@ -13,4 +13,5 @@ const alphanumeric = (string) => {
     return regex.test(string)
 
 }
-alphanumeric('trdthis99')
+
+
