@@ -1,4 +1,6 @@
-/this appears to be a math problem
+//this appears to be a math problem
+
+AM × HM = GM²
 
 
 
