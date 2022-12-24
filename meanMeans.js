@@ -1,13 +1,10 @@
 //this appears to be a math problem
-
 function geo_mean(nums, arith_mean) {
-  for (let i = 0; nums.length; i++) 
-  { sum += i}
-
-  
-  let AM = arith_mean * nums.length
-  console.log(sum);
+  let sum = arith_mean * nums.length
+ console.log(sum)
 }
+
+geo_mean([2, 3, 5], 16)
 /*Introduction
 Take a list of n numbers a1, a2, a3, ..., aN to start with.
 
