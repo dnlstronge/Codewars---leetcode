@@ -1,17 +1,13 @@
 //this appears to be a math problem
 
 function geo_mean(nums, arith_mean) {
+  for (let i = 0; nums.length; i++) 
+  { sum += i}
+
   
-  AM × HM = GM²
-  
-  let HM = 0
-  let AM = 0
-  let GM = 0
-  return 0;
+  let AM = arith_mean * nums.length
+  console.log(sum);
 }
-
-
-
 /*Introduction
 Take a list of n numbers a1, a2, a3, ..., aN to start with.
 
