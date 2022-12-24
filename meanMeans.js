@@ -1,6 +1,14 @@
 //this appears to be a math problem
 
-AM × HM = GM²
+function geo_mean(nums, arith_mean) {
+  
+  AM × HM = GM²
+  
+  let HM = 0
+  let AM = 0
+  let GM = 0
+  return 0;
+}
 
 
 
