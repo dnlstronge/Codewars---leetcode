@@ -2,9 +2,13 @@
 function geo_mean(nums, arith_mean) {
   let sum = arith_mean * nums.length
  console.log(sum)
-
+  let sum2 = nums.reduce((a, b) => a + b, 0)
+  let array =
+console.log(sum2)
 
 }
+ 
+
 
 geo_mean([2, 3, 5], 16)
 /*Introduction
