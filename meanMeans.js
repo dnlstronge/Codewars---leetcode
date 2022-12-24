@@ -1,3 +1,7 @@
+/this appears to be a math problem
+
+
+
 /*Introduction
 Take a list of n numbers a1, a2, a3, ..., aN to start with.
 
