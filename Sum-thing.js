@@ -4,6 +4,9 @@
 
 
 
+
+
+
 function removeNb (n) {
   // from the instruction:
   // a * b = S(n) - a - b
