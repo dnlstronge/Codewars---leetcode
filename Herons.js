@@ -8,6 +8,7 @@ Write function heron which calculates the area of a triangle with sides a, b, an
 
 Heron's formula:
 
+
 s∗(s−a)∗(s−b)∗(s−c)\sqrt{s * (s - a) * (s - b) * (s - c)} 
 s∗(s−a)∗(s−b)∗(s−c)
 ​
