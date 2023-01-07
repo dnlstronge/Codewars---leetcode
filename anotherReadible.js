@@ -41,6 +41,8 @@ function formatDuration (seconds) {
    if (secs > 1 ) { array1.push(`${secs} seconds`)}
  
 
+ 
+ 
 switch (array1.length) {
 
   case 1: 
