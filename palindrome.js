@@ -9,7 +9,8 @@ var answer = (array2 === input1)
 
 
 
+
 /// return true if input 1 is palindrome
 
-console.log(answer)
+//console.log(answer)
 
