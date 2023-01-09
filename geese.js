@@ -3,3 +3,12 @@
 The geese are any strings in the following array, which is pre-populated in your solution:
 
   ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"] */
+
+function gooseFilter (birds) {
+var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+ 
+ var filtered = birds.filter((word) => !geese.includes(word));
+
+ //console.log(filtered)
+ return filtered
+  } 
