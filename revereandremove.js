@@ -3,7 +3,7 @@
 function omit(str) {
 let solution = str.replace(/[^a-z]/g, '').split("").reverse().join("")
 
-console.log(solution)
+//console.log(solution)
 return solution
 }
 
