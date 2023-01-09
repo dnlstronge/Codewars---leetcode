@@ -1,0 +1,3 @@
+write a function to reverse and remove no alphabetic chars:
+
+eg '99bugs99!' outputs 'sgub'
