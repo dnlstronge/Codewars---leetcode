@@ -13,9 +13,9 @@ Your function should only return a number, not the explanation about how you get
 
 */
 
-function getSum(a, b) {
-  if (a==b) {return a}
-  else {
-    return ((a-b)+1) * (a + b) / 2;
-}
+// grrr... min max?
+
+const getSum = (a, b) => {
+  let min = Math.min(a, b), max = Math.max(a, b);
+  return (max - min + 1) * (min + max) / 2;
 }
