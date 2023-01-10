@@ -12,3 +12,14 @@ Examples (a, b) --> output (explanation)
 Your function should only return a number, not the explanation about how you get that number.
 
 */
+
+function getSum( a,b )
+{
+  if (a == b) { 
+   // console.log(a)
+    return a}
+  else {
+    //console.log(a+b)
+    return a+b
+  }
+}
