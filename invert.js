@@ -12,17 +12,11 @@ function invert(array) {
   let solution = []
   for( let i = 0; i < array.length; i++)
 
-  if (array[i] > 0 ) {
-    solution.push((-Math.abs(array[i])))
-  }
-  else {
-    solution.push((Math.abs(array[i])))
-  }
+  array[i] > 0 ?
+    solution.push((-Math.abs(array[i]))) : solution.push((Math.abs(array[i])))
 
-  console.log(solution)
+//console.log(solution)
 
-  return solution
+   return solution
+
 }
-
-//test case
-invert([12, -11, 14, -6, 7])
