@@ -23,9 +23,9 @@ function minMinMax(array) {
   
   for (let i = min; i < max; i++)
 
-if (!array.includes(i)) {
+  if (!array.includes(i)) {
   return [min, i, max]
-}
+  }
 }
 
 console.log(minMinMax([12, -6, 5, 2]))
