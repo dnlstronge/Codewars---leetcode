@@ -18,18 +18,14 @@ minMinMax([2, -4, 8, -5, 9, 7]); //[-5, -3,9]
 
 
 function minMinMax(array) {
- let min = Math.min(...array) 
- let max = Math.max(...array)
- let minB = 0
- if (min < 0) {
-   minB = min+1
- }
- else {
-   minB = min -1
- }
- console.log(min, max, minB)
+  let min = Math.min(...array) 
+  let max = Math.max(...array)
+  
+  for (let i = min; i < max; i++)
 
- return [min, max, minB]
+if (!array.includes(i)) {
+  return [min, i, max]
+}
 }
 
-minMinMax([12, -6, 5, 2])
+console.log(minMinMax([12, -6, 5, 2]))
