@@ -8,3 +8,9 @@ invert([]) == []
 You can assume that all values are integers. Do not mutate the input array/list.
 */
 
+function invert(array) {
+  return array.map(num => -Math.abs(num))
+   
+}
+
+invert([12, 11, 14, 6, 7])
