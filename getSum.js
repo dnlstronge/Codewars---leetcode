@@ -13,13 +13,9 @@ Your function should only return a number, not the explanation about how you get
 
 */
 
-function getSum( a,b )
-{
-  if (a == b) { 
-   // console.log(a)
-    return a}
+function getSum(a, b) {
+  if (a==b) {return a}
   else {
-    //console.log(a+b)
-    return a+b
-  }
+    return ((a-b)+1) * (a + b) / 2;
+}
 }
