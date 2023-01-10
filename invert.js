@@ -12,7 +12,7 @@ function invert(array) {
   let solution = []
   for( let i = 0; i < array.length; i++)
 
-  array[i] > 0 ?
+  array[i] >= 0 ?
     solution.push((-Math.abs(array[i]))) : solution.push((Math.abs(array[i])))
 
 //console.log(solution)
