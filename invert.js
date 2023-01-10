@@ -9,8 +9,20 @@ You can assume that all values are integers. Do not mutate the input array/list.
 */
 
 function invert(array) {
-  return array.map(num => -Math.abs(num))
-   
+  let solution = []
+  for( let i = 0; i < array.length; i++)
+
+  if (array[i] > 0 ) {
+    solution.push((-Math.abs(array[i])))
+  }
+  else {
+    solution.push((Math.abs(array[i])))
+  }
+
+  console.log(solution)
+
+  return solution
 }
 
-invert([12, 11, 14, 6, 7])
+//test case
+invert([12, -11, 14, -6, 7])
