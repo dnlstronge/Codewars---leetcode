@@ -5,8 +5,6 @@ Your task is to return the value of D.  */
 /* I have four positive integers, A, B, C and D, where A < B < C < D. The input is a list of the integers A, B, C, D, AxB, BxC, CxD, DxA in some order. Your task is to return the value of D.  */
 
 
-
-
 function alphabet(ns) {
 
   let sorted = ns.sort((a, b) => a - b);
@@ -14,7 +12,12 @@ function alphabet(ns) {
   let B = sorted[1]
   let AB = A*B
   let C = AB == sorted[2] ? sorted[3] :sorted[2]
-  console.log(sorted, A, AB, C)
+  let CD = sorted[ns.length-1]
+  let D = CD / C
+
+  //console.log(sorted, A, AB, C, CD, D)
+  
+  return D
 
 }
 
