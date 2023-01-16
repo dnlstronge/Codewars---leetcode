@@ -1,3 +1,14 @@
+/* Totally a math problem: see Francesco Maurolico */
+
+function rowSumOddNumbers(n) {
+// n * n2 = n3
+
+	return n*n*n
+}
+
+
+
+
 /*DESCRIPTION:
 Given the triangle of consecutive odd numbers:
 
