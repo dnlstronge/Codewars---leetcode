@@ -2,6 +2,26 @@
 /* FOR A LAUGH : solve this using an object..............*/
 
 
+const alphabet_O = (ns) => {
+  ns.sort((a, b) => a - b)
+
+  let solveme =  {
+    
+    A: ns[0],
+    B: ns[1],
+    C: ns[0] * ns[1] == ns[2] ? ns[3] : ns[2],
+    CD: ns[ns.length -1],
+    
+  }
+  
+ 
+  return solveme.CD / solveme.C
+  
+}
+
+
+
+
 
 /* I have four positive integers, A, B, C and D, where A < B < C < D. 
 The input is a list of the integers A, B, C, D, AxB, BxC, CxD, DxA in some order.
