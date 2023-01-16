@@ -1,6 +1,5 @@
-/// I didn't like this challenge, as its really just an algebra problem which wasn't very fun and required limited code. 
 
-// disappointed, I actually preferred by original brute force solution.
+// I actually preferred by original brute force solution.
 
 
 
