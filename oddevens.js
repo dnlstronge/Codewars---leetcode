@@ -1,5 +1,31 @@
+// and there is of course a simpler way which is remainder: 
+
+function even_or_odd(number)
+{
+  return number % 2 ? "Odd" : "Even"
+  
+}
+
+
+
+
+
+
+
+
 
 // but could this be solved with an array?...............
+
+function evenOrOdd(n) {
+  let sol = n.toString().split('')
+  const even = [0, 2, 4, 6, 8]
+  let ans = parseInt(sol[sol.length-1])
+  
+even.includes(ans, 0) ? sol = "Even" : sol = "odd"
+console.log(sol)
+return sol
+}
+
 
 
 
