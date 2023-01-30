@@ -11,3 +11,14 @@ Examples
 
 Constraints
 0 <= input.length <= 100*/
+
+
+// check one: odd vs even? 
+
+function validParentheses(parens) {
+  
+let a = parens.split("", ).filter((char) => char === "(").length
+let b = parens.split("", ).filter((char) => char === ")").length
+console.log(a, b)
+}
+validParentheses("(())")
