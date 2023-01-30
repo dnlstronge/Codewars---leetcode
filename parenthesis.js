@@ -22,3 +22,19 @@ let b = parens.split("", ).filter((char) => char === ")").length
 console.log(a, b)
 }
 validParentheses("(())")
+
+// maybe stack sort?
+
+function validParentheses(parens) {
+let a = []
+
+
+for (let i= 0; i < parens.length; i++)
+ if (parens[i] === "(") {
+   a.push("(") 
+ }
+console.log(a)
+
+}
+validParentheses("(())")
+
