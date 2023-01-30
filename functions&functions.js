@@ -15,7 +15,12 @@ Division should be integer division. For example, this should return 2, not 2.66
 eight(dividedBy(three()));*/
 
 
+
+
 // i've seen this before.....
+
+
+//but..... what about the division
 
 function zero(f) { return f ? f(0) : 0}
 function one(f) { return f ? f(1) : 1}
@@ -31,5 +36,5 @@ function nine(f) { return f ? f(9) : 9}
 function plus(x) { return function( y ) { return y + x } }
 function minus(x) { return function( y ) { return y - x }}
 function times(x) { return function( y ) { return y * x }}
-function dividedBy(x) { return function( y ) { return y / x }}
+function dividedBy(x) { return function( y ) { return parseInt( y / x) }}
 
