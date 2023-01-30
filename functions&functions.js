@@ -28,7 +28,8 @@ function seven(f) { return f ? f(7) : 7}
 function eight(f) { return f ? f(8) : 8}
 function nine(f) { return f ? f(9) : 9}
 
-function plus() {}
-function minus() {}
-function times() {}
-function dividedBy() {}
+function plus(x) { return function( y ) { return y + x } }
+function minus(x) { return function( y ) { return y - x }}
+function times(x) { return function( y ) { return y * x }}
+function dividedBy(x) { return function( y ) { return y / x }}
+
