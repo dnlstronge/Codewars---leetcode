@@ -5,16 +5,11 @@ const findsum = (l1, l2) => {
             console.log(arg2)
     let sum = +arg1 + +arg2
     let solve = sum.toString().split("").reverse()
-          console.log(sum)
-          console.log(solve)
-          return solve
+        console.log(solve.map(n => Number(n)))
+        return solve.map(n => Number(n))
     }
 
-    findsum([9,9,9,9,9,9,9], [9,9,9,9])
-
-//  test expect [5,4,2] + [3,4,1] =======>  [8,8,3] clear (pass)
-// test [9,9,9,9,9,9,9], [9,9,9,9] ========> [8,9,9,9,0,0,0,1] clear (pass)
-
+    findsum([2, 4, 3], [5, 6 ,4])
 
 
 
