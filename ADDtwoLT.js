@@ -1,4 +1,24 @@
-2. Add Two Numbers
+const findsum = (l1, l2) => {
+    let arg1 = l1.reverse().toString().replace(/,/g, "" )
+            console.log(arg1)
+    let arg2 = l2.reverse().toString().replace(/,/g, "" )
+            console.log(arg2)
+    let sum = +arg1 + +arg2
+    let solve = sum.toString().split("").reverse()
+          console.log(sum)
+          console.log(solve)
+          return solve
+    }
+
+    findsum([9,9,9,9,9,9,9], [9,9,9,9])
+
+//  test expect [5,4,2] + [3,4,1] =======>  [8,8,3] clear (pass)
+// test [9,9,9,9,9,9,9], [9,9,9,9] ========> [8,9,9,9,0,0,0,1] clear (pass)
+
+
+
+
+/* 2. Add Two Numbers
 Medium
 24.6K
 4.8K
@@ -30,3 +50,6 @@ Constraints:
 The number of nodes in each linked list is in the range [1, 100].
 0 <= Node.val <= 9
 It is guaranteed that the list represents a number that does not have leading zeros.
+
+
+/*
