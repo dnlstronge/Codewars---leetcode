@@ -1,4 +1,3 @@
-
 // solution requires max neg amd pos numbers for signed range:
 
 // --: -2,147,483,648
@@ -8,9 +7,12 @@
 
 // console.log(-(2**31))
 // console.log((2**31) -1)
+
+
 let solution = 0
 const bitplus = ((2**31) -1)
 const bitneg = (-(2**31))
+
 const reverseInt = (n) => {
 
 if(n < 0) { 
@@ -18,28 +20,27 @@ if(n < 0) {
       .split("")
       .reverse()
       .join().replace(/,/g, "").replace("-","")
+      
       solution = Number(`-${arr}`)
+      if(solution < bitneg ) {solution = 0 }
+      //console.log(solution)
     }
 if (n > 0 ) {
       arr = n.toString()
       .split("")
       .reverse()
       .join().replace(/,/g, "")
-      solution = Number(solution)
+      solution = Number(arr)
+      if(solution > bitplus) {solution = 0}
+      //console.log(solution)
   }
 
-}
-
-//console.log(solution)
-reverseInt(-123)
-
+        console.log(solution)
+        return solution;
+  }
 
 
-
-
-
-
-
+reverseInt(10320435401)
 
 
 
