@@ -8,9 +8,36 @@
 // console.log(-(2**31))
 // console.log((2**31) -1)
 
-const reverseInt () => {
-  
+
+// solution requires max neg amd pos numbers for signed range:
+
+// --: -2,147,483,648
+// ++: 2,147,483,647
+
+// JS for this is: 
+
+// console.log(-(2**31))
+// console.log((2**31) -1)
+let solution = 0
+const 32bitplus = 
+const 32bitneg = 
+const reverseInt = (n) => {
+
+  if(n < 0) { 
+arr = n.toString()
+.split("")
+.reverse().
+join().replace(/,/g, "").replace("-","")
+solution = Number(`-${arr}`)
+
+console.log(solution)
+if(solution < )
+  }
+
 }
+
+//console.log(solution)
+reverseInt(-123)
 
 
 
