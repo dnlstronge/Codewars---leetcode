@@ -10,14 +10,14 @@ const myAtoi = (str) => {
             .replace(/[a-zA-z]/g, "")
   if (replaced.includes(/[1-9]/g) {
       
-  if(replaced.includes("+") || !replaced.includes("-")) {
-    solution = Number(replaced)
-    //console.log(Number(solution))
-   }  else {
-    solution = Number(replaced)
-    //console.log(solution)
-    } 
-}
+      if(replaced.includes("+") || !replaced.includes("-")) {
+        solution = Number(replaced)
+        //console.log(Number(solution))
+       }  else {
+        solution = Number(replaced)
+        //console.log(solution)
+        } 
+    }
 
     // check replaced
     //console.log(solution)
