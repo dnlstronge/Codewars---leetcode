@@ -1,17 +1,38 @@
+// could also iterate through push nums to an array or something
+
+const bitplus = 2**31 -1
+const bitneg = (-(2**31))
+
 const myAtoi = (str) => {
   solution = 0
   replaced = str
             .replace(/ /g, "")
-            .replace(/[a-zA-z]/g, "") 
+            .replace(/[a-zA-z]/g, "")
   if(replaced.includes("+") || !replaced.includes("-")) {
     solution = Number(replaced)
-    console.log(Number(solution))
-  }             
-                
+    //console.log(Number(solution))
+   }  else {
+    solution = Number(replaced)
+    //console.log(solution)
+    } 
+
+    // check replaced
+    //console.log(solution)
+
+    if(solution < bitneg) {
+    //console.log(bitneg)
+    return bitneg }    
+    if(solution > bitplus) {
+    //console.log(bitplus)
+    return bitplus
+    }  
+    else {
+      console.log(solution)
+      return solution
+    }                
 }
 
-myAtoi("    +55667 and dogs")
-
+myAtoi("    -5232443245667 and dogs")
 
 
 /*
