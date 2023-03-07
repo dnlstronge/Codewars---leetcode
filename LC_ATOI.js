@@ -1,3 +1,20 @@
+const myAtoi = (str) => {
+  // neg 
+
+  let solution = 0
+  step1 = str.replace(/ /g, "")
+  if(step1.includes("+") && !step1.includes("-")) { 
+    
+    console.log(step1.replace("+", "") )
+    } 
+ 
+}
+
+myAtoi("    +55")
+
+
+
+
 /*
 
 Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
