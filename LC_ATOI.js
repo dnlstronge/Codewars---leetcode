@@ -8,6 +8,8 @@ const myAtoi = (str) => {
   replaced = str
             .replace(/ /g, "")
             .replace(/[a-zA-z]/g, "")
+  if (replaced.includes(/[1-9]/g) {
+      
   if(replaced.includes("+") || !replaced.includes("-")) {
     solution = Number(replaced)
     //console.log(Number(solution))
@@ -15,6 +17,7 @@ const myAtoi = (str) => {
     solution = Number(replaced)
     //console.log(solution)
     } 
+}
 
     // check replaced
     //console.log(solution)
@@ -25,7 +28,8 @@ const myAtoi = (str) => {
     if(solution > bitplus) {
     //console.log(bitplus)
     return bitplus
-    }  
+    }
+    
     else {
       console.log(solution)
       return solution
