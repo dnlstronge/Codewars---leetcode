@@ -1,17 +1,16 @@
 const myAtoi = (str) => {
-  // neg 
-
-  let solution = 0
-  step1 = str.replace(/ /g, "")
-  if(step1.includes("+") && !step1.includes("-")) { 
-    
-    console.log(step1.replace("+", "") )
-    } 
- 
+  solution = 0
+  replaced = str
+            .replace(/ /g, "")
+            .replace(/[a-zA-z]/g, "") 
+  if(replaced.includes("+") || !replaced.includes("-")) {
+    solution = Number(replaced)
+    console.log(Number(solution))
+  }             
+                
 }
 
-myAtoi("    +55")
-
+myAtoi("    +55667 and dogs")
 
 
 
