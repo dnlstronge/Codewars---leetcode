@@ -1,5 +1,25 @@
 
+const divider = (n1, n2) => {
+  const min = -(2**31)
+  const max = (2**31)-1
+  
+let q = 0;
+while (n1 >= n2) {
+    n1 -= n2;
+    ++q;
+}
 
+if(q > max) {return max}
+
+if(q < min ) {return min}
+
+else {
+  console.log(q)
+  return q
+}
+
+}
+divider(156, 13)
 
 
 
