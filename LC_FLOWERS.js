@@ -1,5 +1,11 @@
 
+const flowers = (arr, n) => {
+  let val = n
+  for (let i = 0; i< arr.length; i++)
+ console.log(arr[i])
+}
 
+flowers([1, 0, 0, 0, 1], 1)
 
 
 
