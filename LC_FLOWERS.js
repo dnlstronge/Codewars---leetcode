@@ -1,12 +1,20 @@
-
 const flowers = (arr, n) => {
-  let val = n
+  let val = 0
   for (let i = 0; i< arr.length; i++)
- console.log(arr[i])
+  if(arr[i] === 0 && arr[i-1]=== 0 ) 
+   { if (arr[i++] === 0) 
+   { val = +1}
+    }
+if(val < n ) {
+  console.log("false")
+  return false
+} else {
+  console.log("true")
+  return true
 }
 
-flowers([1, 0, 0, 0, 1], 1)
-
+ 
+}
 
 
 
