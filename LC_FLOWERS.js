@@ -1,24 +1,26 @@
 const flowers = (arr, n) => {
   let val = 0
+  let newArr = []
   for (let i = 0; i< arr.length; i++)
   if(arr[i] === 0 && arr[i-1]=== 0 ) 
-   { if (arr[i++] === 0) 
-   { val = +1}
+   { if (arr[i+1] === 0) 
+   {
+     arr[i] = 1
+     val +=1
     }
-if(val < n ) {
-  console.log("false")
-  return false
-} else {
-  console.log("true")
-  return true
+    }
+
+
+console.log(val)
+ if(val >= n) {
+   console.log(true)
+ }
+ else {
+   console.log(false)
+ }
 }
 
- 
-}
-
-
-
-
+flowers([1, 0, 0, 1, 0, 1, 0, 1], 1)
 /*
 You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in adjacent plots.
 
