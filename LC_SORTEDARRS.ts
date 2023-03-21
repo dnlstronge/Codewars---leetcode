@@ -1,11 +1,13 @@
-const sumSorted = async (nums1, nums2) => {
-  let newArr = await nums1.concat(nums2)
-  let solution = await Number(newArr.reduce((a, b) => a+b) / newArr.length)
+const sumSorted (nums1, nums2) => {
+  let newArr = nums1.concat(nums2)
+  let solution = Number(newArr.reduce((a, b) => a+b) / newArr.length)
   console.log(solution)
   return solution
 }
 
 sumSorted([1, 2, 3], [4, 5])
+
+// OOOPS it asked for median not mean lol
 
 /*
 
