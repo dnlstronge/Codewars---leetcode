@@ -4,21 +4,36 @@ const high = ((2**31)-1)
 // first get 32 bit int (above)
 // console.log(low, high) (clear)
 
-const reverse = async (x) => {
-  let arr = x.toString().split("")
+const reverse = (x) => {
+  const arr = x.toString().split("")
 
-  let rev = await arr.reverse().join().replace(/,/g, "")
-  if(rev > )
-  console.log(rev)
+  /* negative integer */
+    if(arr[0] == "-") {
+     arr.shift()
+     arr.push("-")
+     let ans = Number(arr.reverse().join().replace(/,/g, ""))
+      if( ans < low ) {
+        console.log(0)
+        return 0
+      } else {
+        console.log(ans)
+        return ans
+      }
+  /* positive integer */   
 
-
+    } else {
+      let ans = Number(arr.reverse().join().replace(/,/g, ""))
+      if(ans > high) {
+        console.log(0)
+        return 0
+      } else {
+        console.log(ans) 
+        return(ans)
+      }
+    }
   
 }
-reverse(12345)
-
-
-
-
+reverse(2432525)
 
 
 /*
