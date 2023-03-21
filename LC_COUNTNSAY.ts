@@ -1,6 +1,28 @@
 
 
+const countandsay = (n) => {
+  const numMap = {
+    1:0,
+    2:0,
+    3:0,
+    4:0,
+    5:0,
+    6:0,
+    7:0,
+    8:0,
+    9:0
+  }
+ let checkValues = n.toString().split("")
+  console.log(checkValues)
+  checkValues.forEach(num => { 
+    numMap[num] +=1
+    
+    })
+  
+console.log(numMap)
+}
 
+countandsay(1122333)
 
 
 
