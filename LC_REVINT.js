@@ -1,3 +1,26 @@
+const low = (-(2**31));
+const high = ((2**31)-1)
+
+// first get 32 bit int (above)
+// console.log(low, high) (clear)
+
+const reverse = async (x) => {
+  let arr = x.toString().split("")
+
+  let rev = await arr.reverse().join().replace(/,/g, "")
+  if(rev > )
+  console.log(rev)
+
+
+  
+}
+reverse(12345)
+
+
+
+
+
+
 /*
 
 Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
