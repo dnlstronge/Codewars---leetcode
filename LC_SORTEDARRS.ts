@@ -1,18 +1,22 @@
 const sumSorted = (nums1, nums2) => {
   let newArr = nums1.concat(nums2)
   let datapoint = newArr.length / 2
-
   if(newArr.length % 2 > 0) {
     datapoint = (newArr.length + 1) / 2
     console.log(newArr[datapoint -1])
     return newArr[datapoint -1]
+  } 
+  if(datapoint % 2 == 0) {
+
+    // tricksy here------>
+    let actual = (newArr[datapoint-1] + newArr[datapoint]) / 2
+    console.log(actual)
   }
-  console.log(newArr[datapoint -1])
-return newArr[datapoint -1]
 
 }
 
-sumSorted([1, 2, 3 ], [4 , 5])
+sumSorted([1, 2, ], [3 , 4])
+
 
 // fixed it
 // OOOPS it asked for median not mean lol
