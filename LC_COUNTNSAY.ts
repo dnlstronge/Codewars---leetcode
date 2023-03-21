@@ -23,7 +23,7 @@ console.log(numMap)
 }
 
 countandsay(1122333)
-
+// this is as far as I got in that I can count the instances of numbers, tbh I don't really get it
 
 
 
