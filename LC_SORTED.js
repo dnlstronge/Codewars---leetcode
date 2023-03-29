@@ -10,7 +10,7 @@ output: [1]-[4]-[2]-[3],
 
 output: [1]-[5]-[2]-[4]-[3]
 
-etc etc, so 1st - last - 2nd - 2ndlast - 3rd - 3rdlast and so on and so on, 
+etc etc, my understandin of it was the pattern goes 1st - last - 2nd - 2ndlast - 3rd - 3rdlast and so on and so on, 
 
 cannae remember the constraints exactly
 
