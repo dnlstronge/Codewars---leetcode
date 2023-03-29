@@ -1,5 +1,7 @@
 /*
 
+
+
 Read this earlier today but olution occurend to me while on a walk. given a list of ascending numbers sort these to the following format: 
 
 [1]-[2]-[3]-[4]
