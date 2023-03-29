@@ -1,6 +1,11 @@
 /* difficulty (med) => my solution was to create arrays using two loops, the condtion for the loop to stop is comparing current iteration with string I
 assume that this is within the constraints, a nested function finds the product of the two array lengths, which are the numeric equivalent of the strings */
 
+const str1 = "5"
+const str2 = "5"
+let testSolution = 0
+
+
 const findproduct = (a, b) => {
   const arr1 = []
   const arr2 = []
@@ -21,15 +26,34 @@ for(j = 1; j <= b; j++) {
   arr2.push(j)
   
 }
-
- solution = val()
- console.log(solution)
-  return solution;
+solution = val()
+testSolution = val()
+console.log(solution)
+return solution
 }
 
 
-findproduct("25", "5")
-// outputs 125
+findproduct(str1, str2)
+
+
+// added test
+
+const unitTest = async (str1, str2) => {
+  let val1 = await Number(str1)
+  let val2 = await Number(str2)
+  let comparator = await testSolution
+  let testcase = false
+  
+  if(comparator === val1 * val2) {
+    testcase = true
+    }
+    //console.log(testcase)
+    let outcome = testcase ? "passed" : "failed"
+    console.log(outcome)
+  }
+
+
+unitTest(str1, str2);
 
 
 
