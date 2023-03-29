@@ -2,26 +2,31 @@
 
 constraints n1 < n2, n2 < 100*/
 
-// i wrote a function which finds mean or midpoint.....
-
+// i wrote a function which finds median or midpoint.....
 
 const findhalf = (num, num2) => {
   let arr = []
+  let solution = 0
   for(let i = 1; i < num2+1; i++)
   {
     arr.push(i)
   }
-  let solution = 0
+
   let median = arr.length % 2
   if (median > 0) {
-    console.log((arr.length -1) / 2 + 1)
+    
+    solution = (arr.length - 1) / 2 + 1
   }
   else {
-    console.log((arr.length +1)/ 2)
+  
+    solution = (arr.length + 1) / 2
   }
+  console.log(solution)
+  return solution 
 
 }
 
 
-findhalf(1, 33)
+findhalf(1, 20)
+
 
