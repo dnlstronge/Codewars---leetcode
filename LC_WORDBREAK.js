@@ -1,3 +1,31 @@
+// think i've biffed this
+
+
+
+
+/*  difficulty (med) -  hmmm iterate through array and find instances of, push instances to a new array or increment a counter perhaps?, 
+find length of array to evaluate??? */
+
+
+
+const findword = (str, wordDict) => {
+  let newstr = ""
+  let arr = []
+  for(i = 0; i < wordDict.length; i++) {
+ 
+ }
+
+
+ 
+  }
+ if
+  console.log(counter, arr)
+}
+
+findword("dogsbody", ["dogs", "body", "friend"])
+
+
+
 /*
 Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.
 
