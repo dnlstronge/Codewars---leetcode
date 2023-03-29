@@ -1,5 +1,5 @@
 /* difficulty (med) => my solution was to create arrays using two loops, the condtion for the loop to stop is comparing current iteration with string I
-assume that this is within the constrains, a nested function finds the product of the two array lengths, which are the numeric equivalent of the strings */
+assume that this is within the constraints, a nested function finds the product of the two array lengths, which are the numeric equivalent of the strings */
 
 const findproduct = (a, b) => {
   const arr1 = []
@@ -24,6 +24,7 @@ for(j = 1; j <= b; j++) {
 
  solution = val()
  console.log(solution)
+  return solution;
 }
 
 
