@@ -1,4 +1,8 @@
 
+// difficulty (medium)
+
+
+
 /* Solved I think, this was difficult, LC code (wordBreak), basically given a string and an array( the dictionary), you had 
 to return true if the string could be divided by words in the dict to provide a sentence, e.g all words in dictionary used, so
 
