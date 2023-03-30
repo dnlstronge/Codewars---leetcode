@@ -23,12 +23,13 @@ const wordsort = (str, wordDict) => {
   let counter = 0
   let regex = new RegExp(wordDict[i], "g")
   if(!str.includes(wordDict[i])) {
-    return console.log("false")
+    console.log(false)
+    return false
   }
   if(str.includes(wordDict[i])) {
   counter = (str.match(regex).length)
   counted += counter * wordDict[i].length}
-  console.log(counted)
+  //console.log(counted)
   }  
 
   // checks if test fails
