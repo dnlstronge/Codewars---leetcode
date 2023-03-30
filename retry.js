@@ -6,7 +6,9 @@ dogssanddogs, ["dogs, "and"] should evaluate to true, while dogsanddogs, ["dogs"
 
 boy did this wrack my brain as I don't think theres as simplistic way of doing this in JS,
 
-i though about it for a while, and came up with an algorithm which */
+i though about it for a while, and came up with an algorithm iterates through the dictionary finding matches using a regular expression, totalling the length og these
+and comparing it to total string length, if there is no match it returns false, if there is a match it adds to a tally, if when the iteration completes 
+the total is greater than the max length then it returns false, only if the words match and fit exactly in the string does it return true */
 
 
 
