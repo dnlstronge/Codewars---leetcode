@@ -3,6 +3,8 @@
 
 
 
+
+
  const bullcow = (secret, guess) => {
    // first handle types
     let cows = 0
