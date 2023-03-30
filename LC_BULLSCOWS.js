@@ -1,4 +1,20 @@
 
+// start
+
+
+
+ const bullcow = (secret, guess) => {
+   // first handle types
+    let cows = 0
+    let bulls = 0
+    for(i=0; i< guess.length; i++ )
+    if(secret.includes(guess[i])) {
+      cows += 1
+    }
+    console.log(cows)
+ }
+
+bullcow("1234", "1234") // should return 4A0B
 
 
 
