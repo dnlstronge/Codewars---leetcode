@@ -1,3 +1,9 @@
+// initial thoughts create a hash map, split the string using an regex, iterate through the array and match with KV pairs in map???? 
+
+
+
+
+
 
   const log = (x) => {
     console.log(x)
