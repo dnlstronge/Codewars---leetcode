@@ -9,6 +9,9 @@ const basicCalc = (s) => {
 
   const regex = /\s*([-+/*])\s*/
   // gets rid of whitespace and separate by operator
+  
+  
+  
   let split = s.replace(/ /g, "").split(regex)
   log(split)
   // for(i = 0; i< split.length; i++) {
