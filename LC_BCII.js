@@ -1,10 +1,3 @@
-// initial thoughts create a hash map, split the string using an regex, iterate through the array and match with KV pairs in map???? 
-
-
-
-
-
-
   const log = (x) => {
     console.log(x)
   }
@@ -15,16 +8,18 @@
 const basicCalc = (s) => {
 
   const regex = /\s*([-+/*])\s*/
-  let split = s.split(regex)
+  // gets rid of whitespace and separate by operator
+  let split = s.replace(/ /g, "").split(regex)
   log(split)
-  for(i = 0; i< split.length; i++) {
-  console.log(keys[split[i]])
+  // for(i = 0; i< split.length; i++) {
+  // console.log(keys[split[i]])
+  let solve = (`${split[0]} ${split[1]} ${split[2]}`)
+  console.log(solve)
   }
 // split into array, then iterate on basis of order
-}
 
-basicCalc("24+2")
 
+basicCalc(" 24. +2 ")
 
 /*Given a string s which represents an expression, evaluate this expression and return its value. 
 
