@@ -7,8 +7,6 @@
 the whole list but I implemented it like this */
 
 
-
-
 const reversed = (list, left, right) => {
     let leftdp = list.indexOf(left)
     //console.log(leftdp)
