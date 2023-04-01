@@ -1,3 +1,19 @@
+
+// difficulty (medium)
+
+
+// unsure but signgular linked list will be e.g , 3, 4, 5, 6, 7 etc, left always left than midpoint and right always greater
+/* coulndnt the index of each be found and used to switch the values to each other, I can see were you might split at mid point which would save traversing 
+the whole list but I implemented it like this /*
+
+
+
+
+
+
+
+
+
 /*
 
 Given the head of a singly linked list and two integers left and right where left <= right, reverse the nodes of the list from position left to position right, and return the reversed list.
