@@ -1,22 +1,24 @@
 // getting there.........
-
 const decode = (str) => {
+  regex = /^[0-9]/
+  //let arr = str.replace(/\[/g, '').replace(/\]/g, '')
+  let strung = str.split("]")
+  let remove = strung.map(i => i.replace("[", "") )
+  //for (i = 0; i <arr.length; i++)
   
-  let arr = str.replace(/\[/g, '').replace(/\]/g, '').split("")
-  for (i = 0; i <arr.length; i++)
-  if(Number(arr[i]) <= 9) {
-    console.log(arr[i+1].repeat(arr[i]))
-  }
+  // if(Number(arr[i]) <= 9) {
+  //   console.log(arr[i+1].repeat(arr[i]))
+  // }
 
  
-  console.log(arr)
+  console.log(strung, remove)
  
 }
   //for (i = 0; i <arr.length; i++)
   //if(arr[i] !NaN )
 
 
-decode("2[a]3[b]")
+decode("24[abc]3[b]")
 
 
 /*
