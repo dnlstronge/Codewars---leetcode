@@ -12,12 +12,19 @@ const decode = (str) => {
     let str = remove[i]
     for(j=0; j< str.length; j++) {
       if(Number(str[j] <=9)) {
-        console.log("for fucks sake")
-        arraynums.push(str[j])}
-      console.log(arraynums)
+        console.log("numbers array")
+        arraynums.push(str[j])
+    } else {
+        console.log("letters array")
+      arrayletter.push(str[j])
+      
     }
+      console.log(arraynums)
+       console.log(arrayletter)
+    } 
    
    
+  }
   }
 /*
 Given an encoded string, return its decoded string.
