@@ -1,30 +1,52 @@
-// getting there.........
-
 const decode = (str) => {
+  let solve = []
   regex = /^[0-9]/
   regex2 = /^[a-z]/
   //let arr = str.replace(/\[/g, '').replace(/\]/g, '')
   let strung = str.split("]")
   let remove = strung.map(i => i.replace("[", "") )
-  for (i = 0; i < remove.length; i++) {
-     let arraynums = []
-     let arrayletter = []
-    let str = remove[i]
-    for(j=0; j< str.length; j++) {
-      if(Number(str[j] <=9)) {
-        console.log("numbers array")
-        arraynums.push(str[j])
-    } else {
-        console.log("letters array")
-      arrayletter.push(str[j])
+      for (i = 0; i < remove.length; i++) {
+        let arraynums = []
+        let arrayletter = []
+        let str = remove[i]
+        for(j=0; j< str.length; j++) {
+          if(Number(str[j] <=9)) {
+          
+            arraynums.push(str[j])
+             
+            //console.log(arraynums)
+        } else {
+          arrayletter.push(str[j])
+        }
       
-    }
-      console.log(arraynums)
-       console.log(arrayletter)
-    } 
-   
-   
-  }
+       let multiplier = arraynums.join().replace(/,/g, "")
+        //console.log(multiplier)
+
+
+
+        /* need logic to multipy each  */
+        solve.push(arrayletter.map(letter => letter.repeat(multiplier)))
+       
+        //console.log(ans.join().replace(/\s/g, ''))
+     
+        } 
+    
+        
+      }
+  
+  // if(Number(arr[i]) <= 9) {
+  //   console.log(arr[i+1].repeat(arr[i]))
+  // }
+
+ 
+  
+ console.log(solve)
+}
+  //for (i = 0; i <arr.length; i++)
+  //if(arr[i] !NaN )
+
+
+decode("24[abc]3[b]")
   }
 /*
 Given an encoded string, return its decoded string.
