@@ -1,3 +1,24 @@
+// getting there.........
+
+const decode = (str) => {
+  
+  let arr = str.replace(/\[/g, '').replace(/\]/g, '').split("")
+  for (i = 0; i <arr.length; i++)
+  if(Number(arr[i]) <= 9) {
+    console.log(arr[i+1].repeat(arr[i]))
+  }
+
+ 
+  console.log(arr)
+ 
+}
+  //for (i = 0; i <arr.length; i++)
+  //if(arr[i] !NaN )
+
+
+decode("2[a]3[b]")
+
+
 /*
 Given an encoded string, return its decoded string.
 
