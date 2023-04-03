@@ -1,26 +1,24 @@
 // getting there.........
+
 const decode = (str) => {
   regex = /^[0-9]/
+  regex2 = /^[a-z]/
   //let arr = str.replace(/\[/g, '').replace(/\]/g, '')
   let strung = str.split("]")
   let remove = strung.map(i => i.replace("[", "") )
-  //for (i = 0; i <arr.length; i++)
-  
-  // if(Number(arr[i]) <= 9) {
-  //   console.log(arr[i+1].repeat(arr[i]))
-  // }
-
- 
-  console.log(strung, remove)
- 
-}
-  //for (i = 0; i <arr.length; i++)
-  //if(arr[i] !NaN )
-
-
-decode("24[abc]3[b]")
-
-
+  for (i = 0; i < remove.length; i++) {
+     let arraynums = []
+     let arrayletter = []
+    let str = remove[i]
+    for(j=0; j< str.length; j++) {
+      if(Number(str[j] <=9)) {
+        console.log("for fucks sake")
+        arraynums.push(str[j])}
+      console.log(arraynums)
+    }
+   
+   
+  }
 /*
 Given an encoded string, return its decoded string.
 
