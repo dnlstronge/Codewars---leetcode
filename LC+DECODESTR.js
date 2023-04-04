@@ -1,8 +1,11 @@
+// difficulty (medium??) 
+
+// saints preserve us I solved it:)
+
+
+
 const decode = (str) => {
   let solve = []
-  regex = /^[0-9]/
-  regex2 = /^[a-z]/
-  //let arr = str.replace(/\[/g, '').replace(/\]/g, '')
   let strung = str.split("]")
   let remove = strung.map(i => i.replace("[", "") )
       for (i = 0; i < remove.length; i++) {
@@ -11,43 +14,22 @@ const decode = (str) => {
         let str = remove[i]
         for(j=0; j< str.length; j++) {
           if(Number(str[j] <=9)) {
-          
             arraynums.push(str[j])
-             
-            //console.log(arraynums)
         } else {
           arrayletter.push(str[j])
         }
-      
-       let multiplier = arraynums.join().replace(/,/g, "")
-        //console.log(multiplier)
-
-
-
-        /* need logic to multipy each  */
-        solve.push(arrayletter.map(letter => letter.repeat(multiplier)))
-       
-        //console.log(ans.join().replace(/\s/g, ''))
-     
         } 
-    
+       let multiplier = arraynums.join().replace(/,/g, "")
+     solve.push(arrayletter.map(letter => letter.repeat(multiplier)))
         
       }
-  
-  // if(Number(arr[i]) <= 9) {
-  //   console.log(arr[i+1].repeat(arr[i]))
-  // }
-
- 
-  
- console.log(solve)
+  let solution = solve.join().toString().replace(/,/g, "")
+        console.log(solution)
+        return solution
+        
 }
-  //for (i = 0; i <arr.length; i++)
-  //if(arr[i] !NaN )
 
-
-decode("24[abc]3[b]")
-  }
+decode("24[abc]3[b]5[z]")
 /*
 Given an encoded string, return its decoded string.
 
