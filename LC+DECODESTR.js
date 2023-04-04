@@ -1,6 +1,6 @@
 // difficulty (medium??) 
 
-// saints preserve us I solved it:)
+// saints preserve us I almost solved it:) - seems to be a few edge cases I hadn't considered such as 3[a3[2]] brackets within brackets, a well. At least had fun with nested loops
 
 
 const decode = (str) => {
