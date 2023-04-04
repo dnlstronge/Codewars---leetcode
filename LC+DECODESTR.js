@@ -3,11 +3,10 @@
 // saints preserve us I solved it:)
 
 
-
 const decode = (str) => {
   let solve = []
-  let strung = str.split("]")
-  let remove = strung.map(i => i.replace("[", "") )
+  const strung = str.split("]")
+  const remove = strung.map(i => i.replace("[", "") )
       for (i = 0; i < remove.length; i++) {
         let arraynums = []
         let arrayletter = []
@@ -23,13 +22,14 @@ const decode = (str) => {
      solve.push(arrayletter.map(letter => letter.repeat(multiplier)))
         
       }
-  let solution = solve.join().toString().replace(/,/g, "")
+  const solution = solve.join().toString().replace(/,/g, "")
         console.log(solution)
         return solution
         
 }
 
-decode("24[abc]3[b]5[z]")
+decode("24[abc]3[b]5[z]") // outputs aaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccbbbzzzzz
+
 /*
 Given an encoded string, return its decoded string.
 
