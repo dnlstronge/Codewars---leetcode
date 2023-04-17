@@ -1,7 +1,15 @@
 
+
+
 /*Given an array of n integers nums, a 132 pattern is a subsequence of three integers nums[i], nums[j] and nums[k] such that i < j < k and nums[i] < nums[k] < nums[j].
 
-Return true if there is a 132 pattern in nums, otherwise, return false. */
+Return true if there is a 132 pattern in nums, otherwise, return false. 
+
+Constraints:
+
+n == nums.length
+1 <= n <= 2 * 105
+-109 <= nums[i] <= 109*/
 
 
 const findPattern = (nums: number[]) => { 
@@ -13,12 +21,17 @@ const findPattern = (nums: number[]) => {
 
   if(i < k && k < j) {
     console.log(true)
-    return ans = true
-  }
+    ans = true
+    return ans
+  } 
  
 
   }
- 
+ console.log(ans)
+ return ans
 }
-findPattern([3, 1, 4, 2]) // ========= true
-findPattern([-1, 3, 2, 0]) // ========== true
+
+/* test cases */
+findPattern([3, 1, 4, 2]) // true
+findPattern([-1, 3, 2, 0]) // true
+findPattern([1, 2, 3, 4]) // false
