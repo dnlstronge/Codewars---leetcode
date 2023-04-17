@@ -35,3 +35,4 @@ const findPattern = (nums: number[]) => {
 findPattern([3, 1, 4, 2]) // true
 findPattern([-1, 3, 2, 0]) // true
 findPattern([1, 2, 3, 4]) // false
+findPattern([1, 2, 3, 4, 5, 7, 6, 1, 1, 1]) // true
