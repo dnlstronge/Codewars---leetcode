@@ -3,7 +3,20 @@
 
 Return true if there is a 132 pattern in nums, otherwise, return false. */
 
-
 const findPattern = (nums: number[]) => {
-
+  for(let i = 0; i < nums.length; i++) {
+  let j = nums[i+1]
+  let k = nums[i+2]
+  let ans: boolean = false
+  if(i < k && k < j) {
+    console.log(true)
+    return ans = true
+    /* will return if pattern is valid*/ 
+  } else if(ans = false) {
+    /* continues to evaluate if valid pattern not found ~ !true */
+    console.log(false)
+    ans = false
+  }
+  }
 }
+findPattern([3, 1, 4, 2])
