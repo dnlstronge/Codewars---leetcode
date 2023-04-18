@@ -1,4 +1,18 @@
+const countone = (arr: number[]) => {
+  arr.map((num) => {
+    let x = num
+    let cut = arr.filter(y => x === y)
+    if(cut.length === 1 ) {
+      // console.log(x)
+      return x
+    }
 
+  })
+}
+
+countone([7, 2, 2, 4, 4, 5, 5]) // outputs 7
+countone([2, 2, 1, 4, 4, 5, 5]) // outputs 1
+countone([3, 3, 4, 4, 7, 7, 9]) // outputs 9
 
 
 
