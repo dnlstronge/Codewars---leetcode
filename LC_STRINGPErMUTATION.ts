@@ -16,3 +16,15 @@ Example 2:
 
 Input: s1 = "ab", s2 = "eidboaoo"
 Output: false*/
+
+
+// must actually be an easy if I am reading it correct: 
+
+const findPerm = (s1: string, s2: string) => {
+const solve = s2.includes(s1)
+console.log(solve)
+return solve;
+}
+
+findPerm("ab", "fffabfff") // true
+findPerm("floasts", "asdcdefgflaordsfsdf") // false
