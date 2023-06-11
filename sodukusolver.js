@@ -26,4 +26,19 @@ const bd1 = [
           [b, b, b, b, b, b, b, b, 8], 
           [b, b, b, b, b, b, b, b, 9],
             ]
+
+if(solved(puzzle)) {
+  return puzzle
+} else {
+  const possible = nextBoard(boards)
+  const validBoard = keepValid(possible)
+  return searchForSolution(validBoards)
+}
+
+function searchForSolution(boards) {
+  if(boards.length < 1) {
+    return false
+  } else {
+    // backtrack for solution
+  }
 }
