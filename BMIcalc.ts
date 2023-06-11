@@ -9,19 +9,37 @@
 
 // if bmi > 30 return "Obese"
 
-export function bmi(weight: number, height: number) {
+xport function bmi(weight: number, height: number) {
   const calc = weight / (height**2) 
-  console.log(calc)
+  let solution = ""
+
   const rangeMap = {
     Underweight: 18.5,
     Normal: 25,
     Overweight: 30,
     Obese: 30,
   }
-  if(calc <= rangeMap.Underweight) {
-    console.log(Object.entries(rangeMap)[0][0])
-  }
-  return
-}
 
-bmi(22, 1.94)
+  //under
+  if(calc <= rangeMap.Underweight) {
+   return solution = Object.entries(rangeMap)[0][0]
+   
+  }
+  // normal
+  if(calc > rangeMap.Underweight && calc <= rangeMap.Normal) {
+   return solution = Object.entries(rangeMap)[1][0]
+
+  }
+  // over 
+  if(calc > rangeMap.Normal && calc <= rangeMap.Overweight) {
+   return solution = Object.entries(rangeMap)[2][0]
+  
+  } 
+    //obese 
+  
+  else {
+    return solution = Object.entries(rangeMap)[3][0]
+  }
+
+  return solution
+}
