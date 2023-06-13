@@ -14,3 +14,11 @@ function capitalizeWord(word) {
 
 
 */
+function capitalizeWord(word) {
+  let letter = word[0].toUpperCase()
+  const solve = word.replace(word.charAt(0), letter)
+  
+  return word;
+}
+
+capitalizeWord("string")
