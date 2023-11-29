@@ -1,6 +1,8 @@
 // /1 - get the answers from the objects
 // /2 - count the yeses
 
+
+
 const data = [
   {
   name: "dave", 
