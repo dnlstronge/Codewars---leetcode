@@ -9,6 +9,7 @@ const countStuff = (val: string, str: string) => {
   }
   console.log(counter)
   return counter
+  
 }
 
 countStuff("a", "thenumberofasshouldbeaccuratelythree") //3
